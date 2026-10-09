@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My personal web developer portfolio">
+    <title>My Portfolio | Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="#home" class="logo">MyPortfolio</a>
+
+            <button id="menu-toggle"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false"
+                    aria-controls="nav-links">
+                ☰
+            </button>
+
+            <ul id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="intro">HELLO, I'M</p>
+                <h1>Your Name</h1>
+                <h2>Aspiring Web Developer</h2>
+                <p>
+                    I am a B.Tech student passionate about web development,
+                    programming, and building useful digital solutions.
+                </p>
+                <a href="#projects" class="btn">Explore My Work</a>
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="https://placehold.co/300x300/2563eb/ffffff?text=My+Photo"
+                    alt="Placeholder portrait representing the portfolio owner">
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>
+                I am a technology enthusiast pursuing a Bachelor of
+                Technology degree. I enjoy learning programming,
+                designing websites, solving problems, and exploring
+                new technologies. My goal is to become a skilled
+                software developer by building real-world projects.
+            </p>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-card">HTML</div>
+                <div class="skill-card">CSS</div>
+                <div class="skill-card">JavaScript</div>
+                <div class="skill-card">C++</div>
+                <div class="skill-card">Java</div>
+                <div class="skill-card">Problem Solving</div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>My Projects</h2>
+
+            <div class="projects-container">
+                <article class="project-card">
+                    <h3>Personal Portfolio</h3>
+                    <p>
+                        A responsive personal website built using
+                        HTML, CSS, and JavaScript.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <h3>Student Management System</h3>
+                    <p>
+                        A project concept for organizing student
+                        information and academic records.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <h3>Problem-Solving Practice</h3>
+                    <p>
+                        Programming exercises that help improve
+                        logical thinking and coding skills.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <p>Have a question or project idea? Send me a message.</p>
+
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name"
+                           placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message"
+                              rows="5" placeholder="Write your message"
+                              required></textarea>
+                </div>
+
+                <button type="submit" class="btn">Send Message</button>
+                <p id="form-status" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+        <button id="theme-toggle" type="button">Toggle Dark Mode</button>
+    </footer>
+
+</body>
+</html>
